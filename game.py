@@ -25,12 +25,6 @@ def create_adadachi():
 
     while personality["fav_game"] == personality["hates_game"]:
         personality["hates_game"] = random.randint(0,len(games)-1)
-    
-    # if personality["fav_food"] == personality["hates_food"]:
-    #     personality["hates_food"] = random.randint(0,len(foods)-1)
-
-    # if personality["fav_game"] == personality["hates_game"]:
-    #     personality["hates_game"] = random.randint(0,len(games)-1)
 
     player.adadachi = Adadachi(name,personality)
 
